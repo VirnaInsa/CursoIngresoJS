@@ -8,12 +8,15 @@ function mostrar()
 		alert("Excelente");
 
 	}
-	else{
-		if(nota>3){
+	else
+	{
+		if(nota>3)
+		{
 		alert("Aprobó");
 
 	    }
-	    else {
+	    else 
+		{
 		alert("Vamos, la proxima se puede");
 	    }
 	}

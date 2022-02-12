@@ -12,17 +12,12 @@ function SacarResto()
 
 	dividendo = document.getElementById("txtIdNumeroDividendo").value;
 	divisor = document.getElementById("txtIdNumeroDivisor").value;
-	console.log(dividendo);
-	console.log(divisor);
 
 	division = dividendo / divisor;
-	console.log(division)
 
 	division = parseInt(division)
-	console.log(division);
 
 	resto= dividendo- (divisor*division);
-	console.log(resto);
 
 	alert("El resto es "+ resto);
 }

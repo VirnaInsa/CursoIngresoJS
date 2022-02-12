@@ -10,7 +10,8 @@ function mostrar()
 
 	}
 	else 
-	    {if(edad <=17){
+	{
+		if(edad <=17){
 		alert("Es adolecente");
 
 	}

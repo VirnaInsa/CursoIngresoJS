@@ -31,6 +31,7 @@ function Circulo ()
     var mensaje;
 
     vueltaAlambre = 3
+    
     radioCirculo = document.getElementById("txtIdRadio").value;
     radioCirculo = parseFloat(radioCirculo);
 

@@ -14,7 +14,6 @@ function mostrarAumento()
 	
 	porcentaje = importe * 0.1;
 	totalConAumento = importe + porcentaje;
-	console.log(totalConAumento);
 
 	document.getElementById("txtIdResultado").value =totalConAumento;
 	
