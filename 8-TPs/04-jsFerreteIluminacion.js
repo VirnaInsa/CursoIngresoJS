@@ -10,10 +10,10 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
-    var cantidadLampara;
- 	var precio;
-    var precioTotal;
-    var marcaLampara;
+    let cantidadLampara;
+ 	let precio;
+    let precioTotal;
+    let marcaLampara;
   
     precio = 35
 
@@ -27,44 +27,55 @@ function CalcularPrecio ()
        precioTotal = cantidadLampara* precio * 0.5;
        
     }
-    else {
-        precioTotal= cantidadLampara* precio ;
-    }
-    //B
-    else if(cantidadLampara == 5 ){
-
-        if (marcaLampara = "ArgentinaLuz")
-        {
-            precioTotal = cantidadLampara* precio  * 0.6;
-        }
-        else
-        {
-            precioTotal = cantidadLampara* precio  * 0.7;
-        }
-            
-
-        }
-    //C    
-    else if(cantidadLampara == 4) 
+    else 
     {
-        if(marcaLampara == "ArgentinaLuz"||marcaLampara == "FelipeLamparas")
-        {
-            precioTotal = cantidadLampara* precio* 0.75;
+        precioTotal= cantidadLampara* precio ;
+        
+    }
+    if (cantidadLampara == 5) {
+        if (marcaLampara == "ArgentinaLuz") {
+            precioTotal = cantidadLampara * precio * 0.6;
         }
         else {
-            precioTotal == cantidadLampara* precio * 0.8;
+            precioTotal = cantidadLampara * precio * 0.7;
         }
-
+        
+      
+    
     }
-    //D
-    else if(cantidadLampara == 3)
-    {
-        if(marcaLampara == "ArgentinaLuz")
-        {
-            precioTotal == cantidadLampara* precio * 0.85
+    if (cantidadLampara == 4) {
+        if (marcaLampara == "ArgentinaLuz" || marcaLampara == "FelipeLamparas") {
+            precioTotal = cantidadLampara * precio * 0.75;
         }
+        else {
+            precioTotal = cantidadLampara * precio * 0.8;
 
+        }
     }
+    if (cantidadLampara == 3) {
+        if (marcaLampara == "ArgentinaLuz") {
+            precioTotal = cantidadLampara * precio * 0.85;
+        }
+        else {
+            if (marcaLampara == "FelipeLamparas") {
+                precioTotal = cantidadLampara * precio * 0.9;
+            }
+            else {
+                precioTotal = cantidadLampara * precio * 0.95;
+            }
+        }
+    }
+
+    if (precioTotal > 120) {
+        alert("IIBB Usted pago " + precioTotal * 0.10);
+         
+        precioTotal = precioTotal * 1.10;
+         
+    }
+    
+    
+    precioTotal = precioTotal.toFixed(2);
+    
 
     
     document.getElementById("txtIdprecioDescuento").value= precioTotal;
