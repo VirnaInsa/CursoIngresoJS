@@ -40,8 +40,6 @@ function CalcularPrecio ()
             precioTotal = cantidadLampara * precio * 0.7;
         }
         
-      
-    
     }
     if (cantidadLampara == 4) {
         if (marcaLampara == "ArgentinaLuz" || marcaLampara == "FelipeLamparas") {
@@ -60,7 +58,7 @@ function CalcularPrecio ()
             if (marcaLampara == "FelipeLamparas") {
                 precioTotal = cantidadLampara * precio * 0.9;
             }
-            else {
+            else { 
                 precioTotal = cantidadLampara * precio * 0.95;
             }
         }
@@ -73,10 +71,7 @@ function CalcularPrecio ()
          
     }
     
-    
     precioTotal = precioTotal.toFixed(2);
-    
-
     
     document.getElementById("txtIdprecioDescuento").value= precioTotal;
 }
