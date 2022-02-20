@@ -76,6 +76,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
             precioTotal = precioTotal * 1.10;
             alert("IIBB usted pago " + precioTotal);
     }
+<<<<<<< HEAD
           document.getElementById("txtIdprecioDescuento").value= precioTotal; 
      }
     
@@ -88,6 +89,25 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
          else {
              precioTotal = cantidadLampara * precio * 0.7;
          }
+=======
+    else 
+    {
+        precioTotal= cantidadLampara* precio ;
+        
+    }
+    if (cantidadLampara == 5) {
+        if (marcaLampara == "ArgentinaLuz") {
+            precioTotal = cantidadLampara * precio * 0.6;
+        }
+        else {
+            precioTotal = cantidadLampara * precio * 0.7;
+        }
+        
+    }
+    if (cantidadLampara == 4) {
+        if (marcaLampara == "ArgentinaLuz" || marcaLampara == "FelipeLamparas") {
+            precioTotal = cantidadLampara * precio * 0.75;
+>>>>>>> ded3b8b91cffec23dde6216ca2ce9c63dcaaafbc
         }
      else
         if (cantidadLampara == 4) {
@@ -113,6 +133,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
              }
          }
         }
+<<<<<<< HEAD
     else
      if (precioTotal > 120) {
          alert("IIBB Usted pago " + precioTotal * 1.10);
@@ -127,3 +148,26 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
     }*/
  
  
+=======
+        else {
+            if (marcaLampara == "FelipeLamparas") {
+                precioTotal = cantidadLampara * precio * 0.9;
+            }
+            else { 
+                precioTotal = cantidadLampara * precio * 0.95;
+            }
+        }
+    }
+
+    if (precioTotal > 120) {
+        alert("IIBB Usted pago " + precioTotal * 0.10);
+         
+        precioTotal = precioTotal * 1.10;
+         
+    }
+    
+    precioTotal = precioTotal.toFixed(2);
+    
+    document.getElementById("txtIdprecioDescuento").value= precioTotal;
+}
+>>>>>>> ded3b8b91cffec23dde6216ca2ce9c63dcaaafbc
