@@ -31,6 +31,8 @@ function mostrar(){
 	cantidadDeNegativos = 0;
 	contadorDeCeros = 0;
 	contadorDePares = 0;
+	promedioDePositivos =0;
+	promedioDeNegativos =0;
 	respuesta = "si";
 
 	while(respuesta=="si"){
@@ -52,22 +54,23 @@ function mostrar(){
 		if(numeroIngresado % 2 == 0 && numeroIngresado != 0){
 			contadorDePares++;
 		}
-		respuesta = prompt("Desea ingresar otro número? (si/no)");
+		respuesta = prompt("¿Desea ingresar otro número?");
 	}//fin del while
 
 	promedioDePositivos = sumaPositivos / cantidadDePositivos;
 	promedioDeNegativos = sumaNegativos / cantidadDeNegativos;
 	diferencia = sumaPositivos + sumaNegativos;
 
-	console.log("La suma de negativos es = " + sumaNegativos);
-	console.log("La suma de positivos es = "+sumaPositivos);
-	console.log("La cantidad de negativos es = "+cantidadDeNegativos);
-	console.log("la cantidad de positivos es = "+cantidadDePositivos);
-	console.log("La cantidad de ceros es = "+contadorDeCeros);
-	console.log("la cantidad de pares es = "+contadorDePares);
-	console.log("El promedio de negativos es = "+promedioDeNegativos);
-	console.log("El promedio de positivos es = "+promedioDePositivos);
-	console.log("La diferencia entre positivos y negativos es= " +diferencia);
+	document.write("<br> La suma de negativos es = " + sumaNegativos);
+	document.write("<br> La suma de positivos es = "+sumaPositivos);
+	document.write("<br> La cantidad de negativos es = "+cantidadDeNegativos);
+	document.write("<br> la cantidad de positivos es = "+cantidadDePositivos);
+	document.write("<br> La cantidad de ceros es = "+contadorDeCeros);
+	document.write("<br> la cantidad de pares es = "+contadorDePares);
+	document.write("<br> El promedio de negativos es = "+promedioDeNegativos);
+	document.write("<br> El promedio de positivos es = "+promedioDePositivos);
+	document.write("<br> La diferencia entre positivos y negativos es= " +diferencia);
 
 	
 }//FIN DE LA FUNCIÓN
+
