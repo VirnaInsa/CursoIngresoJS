@@ -8,14 +8,14 @@ function mostrar()
 	numeroIngresado = prompt("Ingrese un número");
 	numeroIngresado = parseInt(numeroIngresado);
 
-	for(i =2; i< numeroIngresado;i++){
+	for(i =1 ; i<= numeroIngresado; i++){
 		
-		if (numeroIngresado% 1 == 0) {
-			contadorDeDivisores++
+		if (numeroIngresado % 1 == 0) {
+			contadorDeDivisores++;
 		}
-
+        
 	}
-	if (contadorDeDivisores == 0) {
+	if (contadorDeDivisores ==2) {
 		alert( numeroIngresado + " es primo");
 	}
 	else {
